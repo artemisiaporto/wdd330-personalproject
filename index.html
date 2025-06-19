@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Creation</title>
+    <meta name="description" content="Home page of character creation website project.">
+    <meta name="author" content="Artemisia Porto Jacob">
+    <meta property="og:title" content="Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="https://artemisiaporto.github.io/wdd330-personalproject/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Play:wght@400;700&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/larger.css">
+    <script src="js/creation.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>RPG Character Creation</h1>
+        <p>Personal Project</p>
+        <button id="menu"></button>
+        <nav id="animateme">
+            <ul class="menuLinks">
+                <li class="active"><a href="index.html" title="home" target="_blank">Character Creation</a></li>
+                <li><a href="https://github.com/artemisiaporto" title="track-page" target="_blank">GitHub</a></li>
+                <li><a href="https://picsum.photos/" title="options" target="_blank">Lorem Picsum</a></li>
+                <li><a href="https://randomuser.me/" title="options" target="_blank">Random User</a></li>
+                <li><a href="https://www.dicebear.com/" title="options" target="_blank">Dicebear</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="creation">
+        <h2>Character Options</h2>
+        <form method="GET" action="info.html" class="formDesign">
+            <fieldset>
+                <legend>Creator Information</legend>
+                <label>First Name<input type="text" required name="first-name" autocomplete="given-name"></label>
+                <label>Last Name<input type="text" required name="last-name" autocomplete="last-name"></label>
+                <label>Email Address<input type="email" required name="email" title="Enter a valid email address"
+                        autocomplete="email"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Character Information</legend>
+                <label>First Name<input type="text" required name="first-name" autocomplete="given-name"></label>
+                <label>Last Name<input type="text" required name="last-name" autocomplete="last-name"></label>
+
+                <label>Type of Hair<input type="text" required name="type-of-hair"></label>
+                <label>Color of Hair<input type="text" required name="color-of-hair"></label>
+                <label>Color of Skin<input type="text" required name="color-of-skin"></label>
+                <label>Height<input type="number" required name="height"></label>
+                <label>Weight<input type="number" required name="weight"></label>
+                <label>Age<input type="number" required name="age"></label>
+            </fieldset>
+
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <input type="submit" value="Create Your Character">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

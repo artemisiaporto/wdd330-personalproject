@@ -1,0 +1,62 @@
+@media (min-width: 800px) {
+    body {
+        display: grid;
+        grid-template-rows: 0.55fr 4fr 0.6fr;
+        margin: 0;
+    }
+
+    header {
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.5fr;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        margin: 20px;
+        justify-self: center;
+        align-self: center;
+        padding: 0 50px 0 48px;
+        grid-row: 1/2;
+        width: 100%;
+    }
+
+    header p {
+        grid-row: 2/3;
+        text-align: center;
+        padding: 5px;
+    }
+
+    header nav#animateme {
+        display: block;
+        grid-row: 3/4;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    ul.menuLinks {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.menuLinks li {
+        padding: 10px;
+        width: 300px;
+    }
+
+    ul.menuLinks a {
+        color: white;
+        text-decoration: none;
+    }
+
+    form {
+        width: 100%;
+    }
+}
