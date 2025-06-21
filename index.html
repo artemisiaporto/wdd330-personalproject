@@ -31,7 +31,6 @@
             <ul class="menuLinks">
                 <li class="active"><a href="index.html" title="home" target="_blank">Character Creation</a></li>
                 <li><a href="https://github.com/artemisiaporto" title="track-page" target="_blank">GitHub</a></li>
-                <li><a href="https://picsum.photos/" title="options" target="_blank">Lorem Picsum</a></li>
                 <li><a href="https://randomuser.me/" title="options" target="_blank">Random User</a></li>
                 <li><a href="https://www.dicebear.com/" title="options" target="_blank">Dicebear</a></li>
             </ul>
@@ -39,7 +38,7 @@
     </header>
     <main id="creation">
         <h2>Character Options</h2>
-        <form method="GET" action="info.html" class="formDesign">
+        <form method="GET" action="display.html" class="formDesign">
             <fieldset>
                 <legend>Creator Information</legend>
                 <label>First Name<input type="text" required name="first-name" autocomplete="given-name"></label>
@@ -49,23 +48,36 @@
             </fieldset>
             <fieldset>
                 <legend>Character Information</legend>
-                <label>First Name<input type="text" required name="first-name" autocomplete="given-name"></label>
-                <label>Last Name<input type="text" required name="last-name" autocomplete="last-name"></label>
+                <label>First Name<input type="text" required name="first-name" id="fname"></label>
+                <label>Last Name<input type="text" required name="last-name" id="lname"></label>
 
-                <label>Type of Hair<input type="text" required name="type-of-hair"></label>
-                <label>Color of Hair<input type="text" required name="color-of-hair"></label>
-                <label>Color of Skin<input type="text" required name="color-of-skin"></label>
-                <label>Height<input type="number" required name="height"></label>
-                <label>Weight<input type="number" required name="weight"></label>
-                <label>Age<input type="number" required name="age"></label>
+                <label>Type of Hair<input type="text" name="type-of-hair" id="thair"></label>
+                <label>Color of Hair<input type="text" name="color-of-hair" id="chair"></label>
+                <label>Color of Skin<input type="text" name="color-of-skin" id="cskin"></label>
+                <label>Gender<input type="text" name="gender" id="gender"></label>
+                <label>Height<input type="number" name="height" id="height"></label>
+                <label>Weight<input type="number" name="weight" id="weight"></label>
+                <label>Age<input type="number" name="age" id="age"></label>
             </fieldset>
 
             <input type="hidden" name="timestamp" id="timestamp" value="">
             <input type="submit" value="Create Your Character">
         </form>
+        <div id="creator-options">
+            <button id="rfname">Random First Name</button>
+            <button id="rlname">Random Last Name</button>
+            <button id="rthair">Random Type of Hair</button>
+            <button id="rchair">Random Color of Hair</button>
+            <button id="rcskin">Random Color of Skin</button>
+            <button id="rgender">Random Gender</button>
+            <button id="rheight">Random Height</button>
+            <button id="rweight">Random Weight</button>
+            <button id="rage">Random Age</button>
+        </div>
     </main>
     <footer>
-
+        <p>&copy; <span id="currentyear"></span> Artemísia Jacob - Brazil</p>
+        <p><span id="lastModified"></span></p>
     </footer>
 </body>
 

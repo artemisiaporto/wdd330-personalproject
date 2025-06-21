@@ -4,18 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Display</title>
+    <title>Character Creation</title>
+    <meta name="description" content="Display page of character creation website project.">
+    <meta name="author" content="Artemisia Porto Jacob">
+    <meta property="og:title" content="Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="https://artemisiaporto.github.io/wdd330-personalproject/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Play:wght@400;700&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/larger.css">
+    <script src="js/display.js" defer></script>
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
     <header>
-
+        <h1>RPG Character Creation</h1>
+        <p>Personal Project</p>
+        <button id="menu"></button>
+        <nav id="animateme">
+            <ul class="menuLinks">
+                <li class="active"><a href="index.html" title="home" target="_blank">Character Creation</a></li>
+                <li><a href="https://github.com/artemisiaporto" title="track-page" target="_blank">GitHub</a></li>
+                <li><a href="https://randomuser.me/" title="options" target="_blank">Random User</a></li>
+                <li><a href="https://www.dicebear.com/" title="options" target="_blank">Dicebear</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-
+    <main id="creation">
+        <h2 id="info-h2">Thank you for using our application!</h2>
+        <p id="info-p">We are happy to help you to create your character</p>
+        <div id="results"></div>
+        <div id="advise"></div>
     </main>
     <footer>
-
+        <p>&copy; <span id="currentyear"></span> Artemísia Jacob - Brazil</p>
+        <p><span id="lastModified"></span></p>
     </footer>
 </body>
 

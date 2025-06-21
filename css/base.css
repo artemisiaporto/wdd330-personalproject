@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    max-width: 100vw;
-    margin: auto;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
     font-family: "Play", "Roboto", "Lato";
     font-size: 0.9em;
     background-color: rgb(212, 212, 212);
@@ -21,9 +27,16 @@ header {
     align-items: center;
 }
 
-header,
 main {
     margin: 0 auto;
+    max-width: 80vw;
+    width: 100%;
+    flex: 1;
+}
+
+header {
+    width: 100%;
+    margin: 0;
 }
 
 h1 {
@@ -116,12 +129,15 @@ ul.menuLinks a:hover {
 
 #creation {
     justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #creation h2 {
-    padding: 0.8rem;
+    padding: 10px 10px 5px 10px;
     font-family: "Press Start 2P";
     font-size: 1.2rem;
+    grid-column: 1/3;
 }
 
 form {
@@ -131,6 +147,7 @@ form {
     padding: 5px 5px 10px 5px;
     margin: 5px 5px 5px 5px;
     grid-gap: 10px;
+    width: 60vw;
 }
 
 form fieldset {
@@ -162,7 +179,7 @@ form input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 100%;
-    max-width: 600px;
+    max-width: 60vw;
 }
 
 form input[type="submit"] {
@@ -171,4 +188,39 @@ form input[type="submit"] {
     border-radius: 8px;
     padding: 0.3rem;
     justify-self: center;
+}
+
+#creator-options {
+    grid-column: 2/3;
+    margin-top: 50vh;
+}
+
+#creator-options button {
+    padding: 5px;
+    width: 95%;
+    max-width: 600px;
+    border-radius: 8px;
+    padding: 0.3rem;
+    justify-self: center;
+}
+
+#creator-options #rfname,
+#creator-options #rlname,
+#creator-options #rthair,
+#creator-options #rchair,
+#creator-options #rcskin,
+#creator-options #rgender,
+#creator-options #rheight,
+#creator-options #rweight,
+#creator-options #rage {
+    margin: 1vh;
+    white-space: nowrap;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    padding: 7px;
+    color: black;
+    background-color: #eee;
 }
