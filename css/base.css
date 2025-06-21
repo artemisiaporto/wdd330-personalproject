@@ -217,6 +217,66 @@ form input[type="submit"] {
     white-space: nowrap;
 }
 
+#display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 10vh 1fr;
+    grid-gap: 5vh;
+    margin: 1vh;
+}
+
+#display-h2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    align-self: center;
+    font-family: "Press Start 2P";
+    font-size: 1rem;
+}
+
+#display-p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    align-self: center;
+    font-family: "Play", "Roboto", "Lato";
+}
+
+#avatar {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#davatar {
+    justify-self: center;
+    align-self: center;
+}
+
+#results {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-rows: 15vh 20vh;
+    align-items: center;
+}
+
+#results h2 {
+    font-family: "Press Start 2P";
+    font-size: 1rem;
+}
+
+#results p {
+    font-family: "Play", "Roboto", "Lato";
+}
+
+#crinfo {
+    grid-row: 1/2;
+}
+
+#chinfo {
+    grid-row: 2/4;
+}
+
 footer {
     text-align: center;
     align-items: center;

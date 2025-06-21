@@ -55,13 +55,19 @@ document.getElementById("rthair").addEventListener("click", () => {
 });
 
 //Creates a random color of hair
-const hairColor = ["black", "brown", "blonde", "red", "gray"];
+const hairColor = ["a55728", "2c1b18", "b58143", "d6b370", "724133", "4a312c", "f59797", "ecdcbf", "c93305", "e8e1e1"];
 document.getElementById("rchair").addEventListener("click", () => {
     document.getElementById("chair").value = hairColor[Math.floor(Math.random() * hairColor.length)];
 });
 
 //Creates a random color of skin
-const skinColor = ["light", "brown", "dark"];
+const skinColor = ["614335",
+    "d08b5b",
+    "ae5d29",
+    "edb98a",
+    "ffdbb4",
+    "fd9841",
+    "f8d25c"];
 document.getElementById("rcskin").addEventListener("click", () => {
     document.getElementById("cskin").value = skinColor[Math.floor(Math.random() * skinColor.length)];
 });
