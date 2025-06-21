@@ -109,7 +109,7 @@ document.getElementById("rage").addEventListener("click", () => {
             document.getElementById("age").value = user.dob.age;
         })
         .catch(error => {
-            console.error("Error getting random gender:", error);
-            alert("Unable to get random gender.");
+            console.error("Error getting random age:", error);
+            alert("Unable to get random age.");
         });
 });
